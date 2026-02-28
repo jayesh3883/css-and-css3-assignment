@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation box</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            background-color:lightgray;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            margin-top: 160px;
+            margin-left: 250px;
+            background-color: orange;
+            position: relative;
+
+            animation-duration: 6s;
+            animation-name: movebox;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes movebox {
+            0%{
+                left: 0;
+                background-color: brown;
+            }
+
+
+            50%{
+                left:300px;
+                background-color: blue;
+
+            }
+
+            100%{
+                left: 0;
+                background-color: greenyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

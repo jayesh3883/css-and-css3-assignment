@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+
+        .main{
+            display: flex;
+            justify-content:center;
+            margin-top: 180px;
+            justify-content: space-around;
+        }
+
+        .JJB{
+            height: 50px;
+            width: 130px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px gray;
+            transition: background-color 0.4s ease,transform o.4s ease;
+        }
+
+        .b1{
+            background-color:rgb(56, 56, 196);
+        }
+
+        .b1:hover{
+            background-color:skyblue;
+            transform: translate(-2px);
+        }
+
+        .b2{
+            background-color:#7b3062 ;
+        }
+
+        .b2:hover{
+            background-color:#FFADE3;
+            transform: translate(-2px);
+        }
+
+        .b3{
+            background-color:#b0781e;
+        }
+
+        .b3:hover{
+                background-color:#F7AE38 ;
+                transform: translate(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <button class="JJB b1">Primary</button>
+        <button class="JJB b2">Secondary</button>
+        <button class="JJB b3">Danger</button>
+    </div> 
+</body>
+</html>

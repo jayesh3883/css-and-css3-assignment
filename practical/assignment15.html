@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: lightgray;
+        }
+
+        .navbar{
+            background-color: rgb(28, 28, 178);
+            padding: 10px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover{
+            background-color:orange;
+        }
+
+        .side-menu{
+            width: 180px;
+            background-color: rgb(5, 5, 92);
+            height: auto;
+        }
+
+        .side-menu a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .sidde-menu a:hover{
+            background-color: orange;
+        }
+
+        .c-box{
+            width: 100%;
+            display: flex;
+            float: right;
+        }
+
+        .section{
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid lightgray;
+        }
+
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+        }
+
+        .gallery img{
+            margin-top: 20px;
+            width: 180px;
+            height: 150px;
+            border-radius: 10px;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .gallery img:hover{
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 5px 5px 15px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">gallery</a>
+        <a href="#">contact</a>
+    </div>
+
+    <div class="c-box">
+
+        <div class="side-menu">
+            <a href="#">dashboard</a>
+            <a href="#">profile</a>
+            <a href="#">setting</a>
+            <a href="#">logout</a>
+        </div>
+
+        <div class="content">
+
+            <div class="section">
+                <h2>landing page</h2>
+                <p>this landing page demonstrates css transitions and transform. hover over the images to see smooth effects.</p>
+            </div>
+
+            <div class="section">
+                <h2>image gallery</h2>
+
+                <div class="gallery">
+                    <img src="img coffe 1.jpg" alt="coffe image">
+                    <img src="img chair 2.webp" alt="chair image">
+                    <img src="birds3 img.jpg" alt="birds image">
+                    <img src="car4 img.jpg" alt="car image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
